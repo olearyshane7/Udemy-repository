@@ -1,0 +1,21 @@
+package dayy2;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		int i=8;
+		int j=0;
+		
+		if( i >= 7) {
+			System.out.print(i);
+		}
+		else {
+			System.out.print(fsfsf);
+		}
+		
+	
+	}
+	
+}
+
+

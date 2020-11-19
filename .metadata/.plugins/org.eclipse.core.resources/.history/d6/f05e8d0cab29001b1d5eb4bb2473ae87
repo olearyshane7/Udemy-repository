@@ -1,0 +1,55 @@
+package SD;
+
+public class StudentDB {
+
+	public static void main(String[] args) {
+		
+		studentID id1 = new studentID("63475467");
+		studentID id2 = new studentID("73455322");
+		studentID id3 = new studentID("25743452");
+		
+		id1.setName("Shane");
+		System.out.println(id1.getName());
+		id2.setName("Shane");
+		System.out.println(id2.getName());
+		id3.setName("Shane");
+		System.out.println(id3.getName());
+		
+	}
+
+
+}
+
+class studentID {
+	private static int StudentID;
+	private String StudentEmail;
+	private String StudentName;
+	private String SSN;
+	private String Studentaccount;
+	private double balance;
+
+	
+	public studentID(String SSN){
+		this.SSN = SSN;
+		setStudentAccount();
+	}
+	
+	private void setStudentAccount() {
+		StudentID = (int)(Math.random())*10000;
+		Studentaccount = (StudentID + "" + SSN.substring(4,8));
+		System.out.println("Student account: " + Studentaccount);
+	}
+	
+	public void setName(String StudentName) {
+		this.StudentName = StudentName;
+	}
+	
+	public String getName() {
+	
+		return StudentName;
+	}
+	
+	
+	
+	
+}

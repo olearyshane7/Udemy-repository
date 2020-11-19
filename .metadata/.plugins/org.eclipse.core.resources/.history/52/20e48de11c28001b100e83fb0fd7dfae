@@ -1,0 +1,17 @@
+package udemy;
+
+public class strings {
+
+	public static void main(String[] args) {
+		String bookTitle;
+		String wordChoice = "Ring";
+		bookTitle = "Lord of the Rings";
+		
+		if(bookTitle.contains("Ring")) {
+			System.out.println("the book contains the word" + wordChoice);
+			
+		}
+
+	}
+
+}

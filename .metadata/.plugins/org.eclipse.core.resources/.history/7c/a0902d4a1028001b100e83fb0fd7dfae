@@ -1,0 +1,17 @@
+package dayy2;
+
+public class Main {
+	
+	public static void main(String[] args) 
+	{
+		var s = new StringBuilder("I'm Shane ");
+		s.append("and I'm bored");
+		System.out.print(s);
+		
+		
+	
+	}
+	
+}
+
+

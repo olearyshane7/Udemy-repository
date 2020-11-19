@@ -1,0 +1,5 @@
+//Warlock
+
+public class Warlock {
+
+}

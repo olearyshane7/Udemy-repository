@@ -1,0 +1,22 @@
+package udemy;
+
+public class numberscalc {
+	//main is main function 
+	public static void main(String[] args) {
+		
+		System.out.println("program start");
+		printName();
+		//only calls printName if you insert into the main function
+	}
+	
+	static void printName() {
+		System.out.println("program end");
+		
+	}
+	
+	addNumbers()
+	
+	multipleNumers();
+	
+
+}

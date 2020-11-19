@@ -1,0 +1,9 @@
+package udemy;
+
+public class fibonnaciAPP {
+	public static void main(String[] args) {
+		//fibonnaci number is defined as the sum of the 2 previous fibonnaci numbers
+		
+	}
+
+}

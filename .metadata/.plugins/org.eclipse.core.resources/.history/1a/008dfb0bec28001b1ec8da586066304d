@@ -1,0 +1,14 @@
+package OOP;
+
+public class bankaccountapp {
+
+	public static void main(String[] args) {
+		// creating a new bank account
+		
+		bankaccount acc1 = new bankaccount();
+		
+		bankaccount acc2 = new bankaccount("Checking account");
+
+	}
+
+}

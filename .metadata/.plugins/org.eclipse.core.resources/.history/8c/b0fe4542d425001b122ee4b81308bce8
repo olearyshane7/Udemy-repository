@@ -1,0 +1,9 @@
+//Druid
+
+public class Druid {
+	mastery= 21.3*restom
+	haste = 10.1*restoh
+	crit = 10.7*restoc
+	vers = 12.19*rest0v
+
+}

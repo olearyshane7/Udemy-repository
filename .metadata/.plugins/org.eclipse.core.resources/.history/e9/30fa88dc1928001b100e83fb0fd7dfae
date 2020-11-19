@@ -1,0 +1,29 @@
+package udemy;
+
+public class cities {
+
+	public static void main(String[] args) {
+		//Declare and define array, arrays start at 0
+		String[] cities = {"New York","San Francicso", "Miami","Dallas"};
+		System.out.println(cities[0]);
+		
+		//declare array
+		String[] states = new String[5];
+		states[0]= "California";
+		states[1]= "Califo";
+		states[2]= "Califor";
+		states[3]= "Californ";
+		states[4]= "Californi";
+		System.out.println(states[2]);
+		
+		//Declare array
+		String[] countries;
+		
+		//define the array
+		countries = new String[3];
+		countries[0]="USA";
+		countries[1]="U";
+		countries[2]="US";
+		System.out.println(countries[1]);
+	}	
+}

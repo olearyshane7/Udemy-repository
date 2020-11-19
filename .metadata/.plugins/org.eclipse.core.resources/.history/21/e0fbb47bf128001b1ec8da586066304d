@@ -1,0 +1,77 @@
+package OOP;
+
+public class bankaccount {
+	//define variables
+	//Static belonds to class not object
+	//final constant (often static final)
+	String accountNumber;
+	private static final String routNumber = "23242343";
+	String routingNumber;
+	String name;
+	String ssn;
+	double balance;
+	
+	//constructor defintions: unique methods
+		//1. they are used to define / setup / initialize properties of an object
+		//2. constructors are implicitly called upon instantiation
+		//3. The same name as the class itself
+	
+	bankaccount() {
+		System.out.println("new account created");
+		
+	}
+	//overloading: call same methods with different reactions
+	bankaccount(String accountType){
+		System.out.println("new account : " + accountType);
+		
+	}
+	
+	bankaccount(String accountType, double initialDeposit){
+		//initialdeposit, balance, ,msg are a local variable
+		System.out.println("new account: " + accountType);
+		System.out.println("initial deposit " + initialDeposit);
+		String msg = null;
+		if(initialDeposit < 1000) {
+			msg = "error message: minimum of 1000$";
+		
+		}else {
+			msg = "thanks for the deposit";
+		}
+		System.out.println(msg);
+		balance = initialDeposit;
+	}
+	
+	
+	//define methods
+	public void deposit(double amount) {
+		balance = balance + amount;
+		
+	}
+	
+	void withdraw(double amount) {
+		balance = balance + amount;
+		
+	}
+	//private can only be called within class
+	private void showActivity(String activity) {
+		System.out.println("your recent transaction: "+ activity);
+		
+		
+	}
+	
+	//default is within package
+	//public is everywhere
+	
+	void checkBalance() {
+		System.out.println("Ballance: " + balance);
+	}
+	
+	void getStatus() {
+		
+	}
+	
+	
+	public String toString() {
+		return "[ " + name + ". " + accountNumber + ".balance " + balance + "routing number" + routNumber +  "]";
+	}
+}

@@ -1,0 +1,18 @@
+package SD;
+
+
+public class names {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		StudentDB studentname1 = new StudentDB();
+		
+		
+	}
+	
+
+	
+
+}

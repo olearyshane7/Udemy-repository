@@ -1,0 +1,14 @@
+
+
+public class Day2 {
+	
+	public static void day2(String[] args) {
+	
+	var s = new StringBuilder("i'm Shane");
+	s.append("and i'm studying");
+	
+	
+	
+	}
+
+}

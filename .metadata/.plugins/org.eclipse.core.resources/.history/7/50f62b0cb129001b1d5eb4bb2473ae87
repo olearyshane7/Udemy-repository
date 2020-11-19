@@ -1,0 +1,84 @@
+package SD;
+
+public class StudentDB {
+
+	public static void main(String[] args) {
+		
+		studentID id1 = new studentID("63475467");
+		
+		id1.setName("Shane");
+		System.out.println(id1.getName());
+		id1.enroll(0);
+		id1.courses();
+
+		
+	}
+
+
+}
+
+class studentID {
+	private static int StudentID;
+	private String StudentEmail;
+	private String StudentName;
+	private String SSN;
+	private String Studentaccount;
+	private double balance;
+	private double amount;
+	private String courses;
+
+	
+	public studentID(String SSN){
+		this.SSN = SSN;
+		setStudentAccount();
+	}
+	
+	private void setStudentAccount() {
+		int StudentID = (int)(Math.random())*10000;
+		Studentaccount = (StudentID + "" + SSN.substring(4,8));
+		System.out.println("Student account: " + Studentaccount);
+	}
+	
+	public void setName(String StudentName) {
+		this.StudentName = StudentName;
+	}
+	
+	public String getName() {
+	
+		return StudentName;
+	}
+	
+	public void balance1() {
+		balance = 50000;
+	}
+	
+	public void enroll(double amount) {
+		amount = balance - 40000;
+		
+	}
+	
+	public void pay(double amount) {
+		amount = balance - 5000;
+		
+	}
+	
+	void balance() {
+		System.out.print(balance);
+		
+	}
+	
+	public void courses() {
+		courses = "english101/n" + "math202/n" + "philosophy110/n" + "programming410/n";
+			
+	}
+	
+	public String toString() {
+		StudentEmail = StudentName + StudentID;
+		return StudentEmail;
+			
+	}
+	
+	
+	
+	
+}

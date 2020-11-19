@@ -1,0 +1,19 @@
+package SD;
+
+
+public class names {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		StudentDB StudentName = new StudentDB();
+		System.out.println(((Object) StudentName).getName());
+		
+		
+	}
+	
+
+	
+
+}

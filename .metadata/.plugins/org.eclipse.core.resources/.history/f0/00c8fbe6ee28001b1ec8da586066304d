@@ -1,0 +1,21 @@
+package OOP;
+
+public class bankaccountapp {
+
+	public static void main(String[] args) {
+		// creating a new bank account
+		
+		bankaccount acc1 = new bankaccount();
+		acc1.accountNumber = "234234223";
+		
+		bankaccount acc2 = new bankaccount("Checking account");
+		acc2.accountNumber = "2143243224";
+		
+		bankaccount acc3 = new bankaccount("deposited ", 5000);	
+		acc3.accountNumber = "324242424";
+		acc3.checkBalance();
+		
+
+	}
+
+}

@@ -1,0 +1,36 @@
+package udemy;
+
+public class numberscalc {
+	//main is main function 
+	public static void main(String[] args) {
+		
+		System.out.println("program start");
+		printName();
+		int numA = 10;
+		int numB = 20;
+		addNumbers(numA, numB);
+		//only calls printName if you insert into the main function
+		int product = multiplyNumbers(numA, numB);
+		System.out.println(product);
+	}
+	
+	static void printName() {
+		System.out.println("program end");
+		
+	}
+	static void addNumbers(int numberA, int numberB) {//paramters with a return type
+		//this function adds 2 numtbers
+		int sum = numberA + numberB;
+		System.out.println(sum + numberA + numberB);
+		
+	}
+	
+	static int multiplyNumbers(int valueA, int valueB) {
+		int product = valueA * valueB;
+		addNumbers(product + 50, product);
+		return product;
+		//return type with parameters
+	}
+	
+
+}

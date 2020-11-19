@@ -1,0 +1,40 @@
+package OOP;
+
+public class bankaccount {
+	//define variables
+	//Static belonds to class not object
+	//final constant (often static final)
+	static final String routNumber = "23242343";
+	String routingNumber;
+	String name;
+	String ssn;
+	
+	//constructor defintions: unique methods
+		//1. they are used to define / setup / initialize properties of an object
+		//2. constructors are implicitly called upon instantiation
+		//3. The same name as the class itself
+	
+	bankaccount() {
+		System.out.println("new accoutn created");
+		
+	}
+	//overloading: call same methods with different reactions
+	bankaccount(String accountType){
+		System.out.println("new account : " + accountType);
+		
+	}
+	
+	
+	//define methods
+	void deposit() {
+		
+	}
+	
+	void withdraw() {
+		
+	}
+	
+	void checkBalance() {
+		
+	}
+}
